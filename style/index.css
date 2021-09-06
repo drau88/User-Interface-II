@@ -142,11 +142,12 @@ h3{
     border: 1px solid grey;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .gallerycontainer{
     width: 33%;
+    margin-bottom: 2%;
     border: 1px solid grey;
     text-align: center;
 }
@@ -159,16 +160,16 @@ img{
 /* FOOTER STYLING */
 
 footer{
+    display: flex;
+    justify-content: center;
     background-color: #bc6c25;
     padding: 2%;
+    text-align: center;
 }
 
 footer div{
-    display: flex;
-    justify-content: center;
+    width: 10%;
     background-color: #606c38;
-    margin-left:45%;
-    margin-right:45%;
     padding: 1%;
 }
 
@@ -198,6 +199,8 @@ footer div{
         padding: 2% 0%;
     }
 
+    /* 800 PX MAIN TITLE STYLING */
+
     .maintitle{
         border: 1px solid grey;
         width: 50%;
@@ -205,12 +208,38 @@ footer div{
         margin-top: 1%;
     }
 
+    /* 800 PX PROJECT GALLERY STYLING */
+
+    .projectgallery{
+        width: 100%;
+        /* margin-left: 5%; */
+        justify-content: space-evenly;
+    }
+
+    .gallerycontainer{
+        width: 45%;
+    }
+
+    img{
+        width: 95%;
+    }
+
+    /* 800 PX FOOTER STYLING */
+
+    footer{
+        height: 20vh;
+        align-items: center;
+    }
+
     footer div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 20%;
+        height: 30%;
         border: 1px solid grey;
     }
 
-    /* 800 PX MAIN TITLE STYLING */
 
 
 }
