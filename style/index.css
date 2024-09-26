@@ -1,1 +1,245 @@
 /* Add CSS styling here */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^CSS RESET^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */
+
+/* GENERAL STYLING */
+html{
+    font-size:62.5%;
+    font-family: 'Oxygen', sans-serif;
+    color: #fefae0;
+}
+
+body{
+    font-size: 2rem;
+    line-height: 1.5;
+    background-color: #283618;
+   
+}
+
+a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #fefae0;
+}
+
+img{
+    border: 5px solid black;
+
+}
+
+p{
+    font-size: 2rem;
+}
+
+/* HEADER STYLING */
+
+header{
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+
+nav {
+    width: 25%;
+    display: flex;
+}
+
+nav a{
+    background-color: #bc6c25;
+    color: #fefae0;
+    padding: 1% 5%;
+    border: 3px solid black;
+}
+
+.headername{
+    font-size: 2.2rem;
+}
+
+.home{
+    background-color: black;
+}
+
+/* MAIN TITLE STYLING */
+
+.maintitle{
+    display:flex;
+    justify-content: center;
+    margin: 5% 10%;
+    padding: 10%;
+    background-image: url(https://images.unsplash.com/photo-1629829386095-535f462b59e3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bigname {
+    color: snow;
+}
+
+h1{
+    font-size: 4.5rem;
+    
+}
+
+h3{
+    display: flex;
+    border: 3px solid black;
+    justify-content: center;
+    background-color: black;
+}
+
+
+/* PROJECT GALLERY STYLING */
+
+.projectgallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallerycontainer{
+    width: 33%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+img{
+    width: 80%;
+    height: 40vh;
+}
+
+/* FOOTER STYLING */
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #bc6c25;
+    padding: 2%;
+    text-align: center;
+}
+
+footer div{
+    width: 10%;
+    background-color: #606c38;
+    padding: 1%;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 800px){
+
+    /* 800 PX Header STYLING */
+
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .headername{
+        font-size: 4rem;
+    }
+
+    nav{
+        width: 20%;
+        flex-direction: column;
+    }
+
+    nav a{
+        padding: 2% 0%;
+    }
+
+    /* 800 PX MAIN TITLE STYLING */
+
+    .maintitle{
+        width: 50%;
+        margin-left: 15%;
+        margin-top: 1%;
+    }
+
+    /* 800 PX PROJECT GALLERY STYLING */
+
+    .projectgallery{
+        width: 100%;
+        /* margin-left: 2%; */
+        justify-content: space-evenly;
+    }
+
+    .gallerycontainer{
+        width: 45%;
+    }
+
+    img{
+        width: 95%;
+    }
+
+    /* 800 PX FOOTER STYLING */
+
+    footer{
+        height: 20vh;
+        align-items: center;
+    }
+
+    footer div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 30%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    footer div{
+        width: 40%;
+    }
+
+}
